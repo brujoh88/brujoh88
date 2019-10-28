@@ -19,16 +19,24 @@
         <nav class="item menu">
             <ul>
                 <li>
-                    <a href="#">¿Que es IMC?</a>
+                    <a href="https://quierocuidarme.dkvsalud.es/salud-para-todos/imc-que-es-el-indice-de-masa-corporal" target="_blank">
+                        ¿Que es IMC?
+                    </a>
                 </li>                    
                 <li>
-                    <a href="#">Calculadora</a>
+                    <a href="#altura">
+                        Calculadora
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Clasificacion</a>
+                    <a href="https://statics-cuidateplus.marca.com/sites/default/files/images/IMC%20(1)(1).jpg" target="_blank">
+                        Clasificacion
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#contact">
+                        Contacto
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -36,32 +44,42 @@
             <div class="container__info">
                 <h2>Clasificacion</h2>
                 <div class="clasificacion">
-                    <a href="#">Bajo peso</a>
+                    <a href="http://static.flickr.com/40/94959704_a956cd22f9_o.gif" target="_blank" id="bajoPeso">
+                        Bajo peso
+                    </a>
                 </div>
                 <div class="clasificacion">
-                    <a href="#">Normal</a>
+                    <a href="https://k60.kn3.net/00452E4B6.gif" target="_blank" id="Normal">
+                        Normal
+                    </a>
                 </div>
                 <div class="clasificacion">
-                    <a href="#">Sobrepeso</a>
+                    <a href="https://media.giphy.com/media/kvsUUdH2xKnA6JdKD9/giphy.gif" target="_blank" id="SobrePeso">
+                        Sobrepeso
+                    </a>
                 </div>
                 <div class="clasificacion">
-                    <a href="#">Obecidad</a>
+                    <a href="https://k62.kn3.net/taringa/8/D/1/2/B/A/vagonettas/368.gif" target="_blank" id="Obesidad">
+                        Obesidad
+                    </a>
                 </div>
                 <div class="clasificacion">
-                    <a href="#">Obecidad Morbida</a>
+                    <a href="https://1.bp.blogspot.com/-qaKUBpaY71w/Vr4Yq5O6WsI/AAAAAAAAAZE/JB469YOjbdY/s1600/tumblr_mnjjv8PkSc1r9kindo1_500.gif" target="_blank" id="ObesidadMorbida">
+                        Obesidad Morbida
+                    </a>
                 </div>
             </div>
         </section>
         <form class="item calc">
             <div class="container__calc">
                 <h2>Calculadora</h2>
-                <input type="number" step="any" placeholder="Altura"/>
-                <input type="number" step="any" placeholder="Peso"/>
-                <button>Calcular</button>
-                <input type="number" disabled>
+                <input type="number" step="any" placeholder="Altura" id="altura"/>
+                <input type="number" step="any" placeholder="Peso" id="Peso"/>
+                <button id="botoncito">Calcular</button>
+                <input type="text" disabled id="IMC"/>
             </div>
         </form>
-        <footer class="item footer">
+        <footer class="item footer" id="contact">
             <a href="https://www.facebook.com/gtiseira" target="_blank">
                 <img src="https://img.icons8.com/nolan/64/000000/facebook.png">                
             </a>
@@ -76,6 +94,6 @@
             </a>
         </footer>
     </section>
-
+    <script src="Script/Script.js"></script>
 </body>
 </html>

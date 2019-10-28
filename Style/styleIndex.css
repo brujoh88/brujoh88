@@ -78,7 +78,8 @@ li{
     border-radius: 10px;
 }
 
-a, label {    
+
+a{    
     text-decoration: none;
     font-size:150%;
     width: 100%;
