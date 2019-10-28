@@ -25,6 +25,11 @@
 
 }
 
+h2 {
+    margin: 25px;
+    text-decoration: underline;  
+}
+
 /*----------------------------------------------CABECERA----------------------------------------------*/
 
 .header{
@@ -73,7 +78,7 @@ li{
     border-radius: 10px;
 }
 
-a {    
+a, label {    
     text-decoration: none;
     font-size:150%;
     width: 100%;
@@ -85,8 +90,6 @@ a {
 }
 
 a:hover{
-    border: 1px solid black;
-    border-radius: 10px;
     color: white;
     font-size:200%;
     transition: .2s;
@@ -123,16 +126,7 @@ a:hover{
     height: 100%;
     width: 100%;
 }
-.info h2{
-    height: 100px;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(205, 130, 228);  
-    border: 1px solid black;
-    border-radius: 10px;
-}
+
 .clasificacion a{
     height: 50px;
     width: 100%;   
@@ -148,16 +142,59 @@ a:hover{
 /*----------------------------------------------CALCULADORA----------------------------------------------*/
 
 .calc{
-    background-color: rgb(255, 94, 0);/*SOLO PARA VER EL FONDO*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-area: calc;
 }
+.calc .container__calc{
+    background-color: #FCF2E7;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;    
+    width: 80%;
+    margin: 50px 200px 50px 200px;
+    padding: 30px;    
+    border-radius: 20px   
+}
+
+.container__calc input {
+    display: flex;
+    margin: 25px 0 25px 0;
+    font-size:150%;
+    text-align: center;
+}
+
+.container__calc button{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FF8A00;
+}
+
+.container__calc button:hover{
+    color: white;
+}
+
+.container__calc button:active{
+    background-color: rgb(170, 91, 0);
+}
+
 
 /*----------------------------------------------FOOTER----------------------------------------------*/
 
 .footer{
-    background-color: rgb(219, 30, 118);/*SOLO PARA VER EL FONDO*/
+    background-color: #000000;
     grid-area: footer;
+    padding: 150px;
+    margin: 100px 0 0 0;
+    display: flex;    
 }
-
+img:hover{
+    background-color: #585858;
+    border-radius: 25px
+}
     
 
